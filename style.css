@@ -32,7 +32,6 @@ padding: 20px;
 border: 3px solid rgb(238, 177, 17) !important;
 display: inline-block;
 transition: all 0.4s ease 0s;
-width: 270px;
 }
 
 .button1:hover {
@@ -44,16 +43,12 @@ transition: all 0.4s ease 0s;
 
 .button_cont{
 display: inline-block;
-width: 280px;
 padding: 10px;
-margin: 0 auto;
-
 }
 
 #buttonCONTAINER {
-text-align: left;
+text-align: center;
 }
-
 
 
 h3 {
