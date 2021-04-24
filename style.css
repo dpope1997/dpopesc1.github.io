@@ -115,6 +115,12 @@ margin: auto;
 padding: 10px;
 }
 
+#promoimage {
+float: right; 
+margin: 0em 0em 1em 1em;
+width: 40em;
+}
+
 button { 
 background-color: rgb(0, 52,125); 
 width: 100%;
