@@ -2,36 +2,63 @@ body {
 background-color: #00acee;
 }
 
-h1 {
-text-indent: 23em;
-height: -5em;
-color: rgb(0, 62, 126); 
-font-size: 3em; 
-font-family: sans-serif; 
-background-color: transparent} 
-
-h2 {
-font-size: 2em;
-font-family: sans-serif;
-letter-spacing: 0.2em;
-text-indent: 1em;
-color: rgb(238, 177, 17);
--moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-background: rgb(0, 52,125);
-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-border-radius: 3px;
-margin: 0.2em 0;
+.main-header {
+ display: flex;
 }
+
+.rectangle {
+   background: rgb(0, 52,125);
+   height: 20px;
+   position: relative;
+   top: -5%;
+   -moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+   box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 20px;
+   margin: 3em 0;
+   margin-bottom: -1em;
+}
+
+
+.location {
+color: rgb(238, 177, 17) !important;
+text-transform: uppercase;
+text-decoration: none;
+background: rgb(0, 52,125);
+padding: 10px;
+display: inline-block;
+transition: all 0.4s ease 0s;
+width: 250px;
+border-radius: 20px;
+text-align: center;
+}
+
+.bodyTEXT {
+color: rgb(238, 177, 17) !important;
+text-transform: uppercase;
+text-decoration: none;
+background: rgb(0, 52,125);
+padding: 10px;
+display: inline-block;
+transition: all 0.4s ease 0s;
+width: 250px;
+border-radius: 20px;
+text-align: center;
+}
+
 
 .button1 {
 color: rgb(238, 177, 17) !important;
 text-transform: uppercase;
 text-decoration: none;
 background: rgb(0, 52,125);
-padding: 20px;
-border: 3px solid rgb(238, 177, 17) !important;
+padding: 30px;
+border: 2px solid white !important;
 display: inline-block;
 transition: all 0.4s ease 0s;
+width: 250px;
+border-radius: 200px;
 }
 
 .button1:hover {
@@ -41,70 +68,19 @@ border-color: #f6b93b !important;
 transition: all 0.4s ease 0s;
 }
 
-.button_cont{
-display: inline-block;
-padding: 10px;
-}
 
 #buttonCONTAINER {
 text-align: center;
+display: flex;
+padding: 30px;
+padding-bottom: -0px;
+margin: 0 auto;
 }
 
-
-h3 {
-width: 20em; 
-padding-left: 1em;
-color: rgb(238, 177, 17);
--moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-background: rgb(0, 52,125);
-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-border-radius: 40px;
-margin: 0.2em 0;
-}
-
-p {
-width: 25em;
-color: white;
-}
-
-h4 {
-color: rgb(238, 177, 17);
-background-color: rgb(0, 52,125);
--moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-background: rgb(0, 52,125);
-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-border-radius: 40px;
-margin: 0.2em 0;
-}
-
-
-adress {
-text-align: center;
-font: normal small-caps 0.8 em sans-serif;
-border-top: 0.5 em double green;
-padding-top: 1em;
-}
-
-a {
-display: block;
-margin: 0.3em;
-}
-
-button { 
-background-color: rgb(0, 52,125); 
-width: 100%;
-color: rgb(238, 177, 17); 
-padding: 15px; 
-margin: 10px 0px; 
-border: none; 
-cursor: pointer; 
-} 
-
-
-#promoimage {
+#map {
 float: right; 
 margin: 0em 0em 1em 1em;
-width: 40em;
+width: 38em;
 }
 
 #flashimage {
@@ -112,29 +88,23 @@ position: absolute;
 float: left; 
 margin: 0em 0em 1em 1em;
 width: 50em;
-top: 320px;
-left: -250px;
+top: 20px;
+left: -305px;
 }
 
-#outer {
-width: 50em;
-}
 
-#links {
-float: left;
-width: 19.585em;
-border-style: outset;
-background-color: rgb(0, 52,125);
-border: transparent;
--moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
-border-radius: 40px;
-margin: 0.2em 0;
+#inner {
+position: relative;
+margin-left: 19.47em;
+padding-left: 1em;
+border-left: solid rgb(0, 62, 126);
+height: 35em;
 }
 
 #box{
 position: relative;
-width: 50%;
+left: -350px;
+width: 40%;
 height: 5em;
 border: rgb(0, 52,125);
 border-style: outset;
@@ -145,10 +115,22 @@ margin: auto;
 padding: 10px;
 }
 
-#inner {
-position: relative;
-margin-left: 19.47em;
-padding-left: 1em;
-border-left: solid rgb(0, 62, 126);
-height: 40em;
+button { 
+background-color: rgb(0, 52,125); 
+width: 100%;
+color: rgb(238, 177, 17); 
+padding: 10px; 
+margin: 10px 0px; 
+border: none; 
+cursor: pointer; 
+} 
+
+adress {
+text-align: left;
+font: normal small-caps 0.8 em sans-serif;
+padding-top: 1em;
+}
+
+p {
+color: white
 }
