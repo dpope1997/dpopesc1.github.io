@@ -11,6 +11,7 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  
 }
 
 
@@ -31,6 +32,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  align-self: flex-end;
 }
 
 .nav li {
