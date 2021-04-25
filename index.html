@@ -20,8 +20,18 @@
 <div class="hero">
   <div class="hero-inner">
     <h1>Welcome</h1>
-    <p>Press the button below to check your CARD's expiration date</p>
-    <a href="search.html" class="button">SEARCH CARD</a>
+    <p>Below you can check your expiradion date.</p>
+    <p>Enter your CARD number then press go.</p>
+    <form action='newmyProgram.php' method='post'>
+    <input name='q' id='q' minlength=6 placeholder=" ">
+    <button onclick="goFoward()">GO</button>
+
+    <script>
+      function goForward() {
+          window.history.foward();
+	}
+     </script>
+   
   </div>
 </div>
 
