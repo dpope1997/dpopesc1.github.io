@@ -114,8 +114,6 @@ body {
 
 
 #colorstrip{
-    width: auto; height: 2px;
-    border-style: solid;
-    border-color: rgb(238, 177, 17);
+    width: auto; height: 8px;
     background-color: rgb(238, 177, 17);
 }
