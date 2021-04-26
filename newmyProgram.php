@@ -1,3 +1,7 @@
+<html>
+
+<h1> test </h1>
+
 <?php
 $q = $_REQUEST["q"];
 $f = fopen("fence.txt", "r");
@@ -10,3 +14,5 @@ while (($line = fgets($f)) !== FALSE) {
 
 
 ?>
+
+</html>
